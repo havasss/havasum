@@ -46,7 +46,7 @@ body{
 }
 
 h1{
-    font-family: 'Cormorant', serif;
+    font-family: 'Cormorant','Georgia', serif;
     font-weight: 600;
     font-size: 80px;
     color: rgba(255, 255, 255, 0.333);
@@ -58,7 +58,7 @@ h1{
 }
 
 h2{
-    font-family: 'Cormorant', serif;
+    font-family: 'Cormorant','Georgia', serif;
     font-weight: 300;
     font-size: 40px;
     color: rgba(232, 232, 232, 0.779);
@@ -69,7 +69,7 @@ h2{
 }
 
 h3{
-  font-family: 'Cormorant', serif;
+  font-family: 'Cormorant','Georgia', serif;
   font-weight: 300;
   font-size: 34px;
   color: rgba(81, 81, 81, 0.87);
@@ -80,7 +80,7 @@ h3{
 }
 
 h5{
-    font-family:'Montserrat', sans-serif;
+    font-family:'Montserrat','Arial', sans-serif;
     font-weight: 300;
     font-size: 24px;
     color: rgba(232, 232, 232, 0.779);
@@ -91,7 +91,7 @@ h5{
 }
 
 h6{
-  font-family:'Montserrat', sans-serif;
+  font-family:'Montserrat','Arial', sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: rgba(232, 232, 232, 0.779);
@@ -104,7 +104,7 @@ h6{
 }
 
 h7{
-  font-family:'Montserrat', sans-serif;
+  font-family:'Montserrat','Arial', sans-serif;
   font-weight: 300;
   font-size: 12px;
   color: rgb(255, 255, 255);
@@ -117,7 +117,7 @@ h7{
 }
 
 p{
-  font-family:'Montserrat', sans-serif;
+  font-family:'Montserrat','Arial', sans-serif;
   font-weight: 100;
   font-size: 12px;
   color: rgba(232, 232, 232, 0.779);
@@ -169,7 +169,7 @@ header {
 }   
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
@@ -189,7 +189,7 @@ a {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  font-family: 'Cormorant', serif;
+  font-family: 'Cormorant','Georgia', serif;
 }
 
  .effect-underline:hover{
@@ -227,7 +227,7 @@ main{
 }
 
 .navbar__menu-item {
-  font-family: 'Cormorant', serif;
+  font-family: 'Cormorant','Georgia', serif;
   text-transform: uppercase;
   font-size: 2em;
   padding: 60px 20px;

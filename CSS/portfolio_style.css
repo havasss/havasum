@@ -7,7 +7,7 @@ body{
 
 
 h1{
-    font-family: 'Cormorant', serif;
+    font-family: 'Cormorant','Georgia', serif;
     font-weight: 600;
     font-size: 80px;
     -webkit-text-stroke: 0.02em rgba(232, 232, 232, 0.779);
@@ -18,7 +18,7 @@ h1{
 }
 
 h2{
-    font-family: 'Cormorant', serif;
+    font-family: 'Cormorant','Georgia', serif;
     font-weight: 300;
     font-size: 40px;
     text-decoration: none;
@@ -28,7 +28,7 @@ h2{
 }
 
 h3{
-  font-family: 'Cormorant', serif;
+  font-family: 'Cormorant','Georgia', serif;
   font-weight: 300;
   font-size: 34px;
   text-decoration: none;
@@ -38,7 +38,7 @@ h3{
 }
 
 h5{
-    font-family:'Montserrat', sans-serif;
+    font-family:'Montserrat','Arial', sans-serif;
     font-weight: 300;
     font-size: 24px;
     text-decoration: none;
@@ -48,7 +48,7 @@ h5{
 }
 
 h6{
-  font-family:'Montserrat', sans-serif;
+  font-family:'Montserrat','Arial', sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: rgb(95, 95, 95);
@@ -60,7 +60,7 @@ h6{
 }
 
 p{
-  font-family:'Montserrat', sans-serif;
+  font-family:'Montserrat','Arial', sans-serif;
   font-weight: 100;
   font-size: 12px;
   color: rgb(95, 95, 95);
@@ -151,7 +151,7 @@ span:hover {
 }
 
 ul{
-  font-family:'Montserrat', sans-serif;
+  font-family:'Montserrat','Arial', sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: rgb(95, 95, 95);
