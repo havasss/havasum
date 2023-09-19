@@ -1,0 +1,335 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(45deg,#367480, #326660, #697d2f,#915171);
+  background-size: 400% 400%;
+  animation: color 40s ease-in-out infinite;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+} 
+
+#dummy{
+  position:relative;
+  height:100vh;
+  width:100%;
+}
+#back{
+  position:relative;
+ padding-top:50%;
+  text-align:center;
+ font-size:1.5em;
+  cursor:pointer;
+}
+
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+.wrapper{
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+h1{
+    font-family: 'Cormorant','Georgia', serif;
+    font-weight: 600;
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.333);
+    -webkit-text-stroke: 0.02em rgba(232, 232, 232, 0.779);
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+h2{
+    font-family: 'Cormorant','Georgia', serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: rgba(232, 232, 232, 0.779);
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+h3{
+  font-family: 'Cormorant','Georgia', serif;
+  font-weight: 300;
+  font-size: 34px;
+  color: rgba(81, 81, 81, 0.87);
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+
+h5{
+    font-family:'Montserrat','Arial', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: rgba(232, 232, 232, 0.779);
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+h6{
+  font-family:'Montserrat','Arial', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(232, 232, 232, 0.779);
+  text-decoration: none;
+  padding: 0;
+  margin: 0.7em 0 0.7em 0;
+  line-height: 1.4em;
+  letter-spacing: 0.01em;
+  text-align: justify;
+}
+
+h7{
+  font-family:'Montserrat','Arial', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
+  margin: 0.2em 0 0.2em 0;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+}
+
+p{
+  font-family:'Montserrat','Arial', sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  color: rgba(232, 232, 232, 0.779);
+  text-decoration: none;
+  padding: 0;
+  margin-top: 0.5em;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 60px 20px 40px;
+  z-index: 100 ;
+}
+
+.logo{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+.logo-hidden{
+  max-width: 0;
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+.logo:hover .logo-hidden{
+  color: #fff;
+  opacity: 1;
+  max-width: 1em;
+}
+
+.typing-text{
+  padding: 0;
+  display: inline-block;
+  width: 23ch;
+  animation: typing 2s steps(22), blink .3s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}   
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+section{
+  width: 70%;
+  display: flex;
+}
+
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+a {
+  color: rgba(232, 232, 232, 0.779);
+  font-size: 2em;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-family: 'Cormorant','Georgia', serif;
+}
+
+ .effect-underline:hover{
+  color: #fff;
+}
+
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 2px solid;
+  margin-top: 10px;
+  opacity: 0;
+  color: rgba(123, 240, 196, 0.929);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+/*button*/
+
+main{
+  width: 100%;
+  padding: 32px 0;
+  border-top: 1px solid rgba(232, 232, 232, 0.779);
+}
+
+.navbar__menu-item {
+  font-family: 'Cormorant','Georgia', serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 60px 20px;
+  font-weight: 700;
+  width: 300px;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar__menu-item-title {
+  width: 100%;
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 0.02em rgba(232, 232, 232, 0.779);
+  transition: -webkit-text-stroke 0.5s ease, color 0.5s ease;
+}
+
+.navbar__menu-item:hover .navbar__menu-item-title {
+  -webkit-text-stroke: none;
+  color:#fff;
+}
+
+.navbar__menu-item-title::after {
+  content: attr(data-menu-item-text);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-weight: 600;
+  -webkit-text-stroke: 0.02em rgba(123, 240, 196, 0.929);
+  color: transparent;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.menu-item-hover-image {
+  width: 354px;
+  height: 198px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 75%;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  /* This places the cursor in the center of the image. Divide the width and height by 2 to get the top and left offsets :) */
+  margin: -115px 0 0 -99px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.navbar__menu-item:hover .menu-item-hover-image {
+  opacity: 1;
+}
+.navbar__menu-item:hover .navbar__menu-item-title::after {
+  opacity: 1;
+  z-index: 3;
+}
+
+
+
+@media screen and (max-width: 420px){
+  h1{
+    font-size: 52px;
+  }
+  h5{
+    font-size: 18px;
+  }
+
+  h6{
+    font-size: 14px;
+  }
+
+  .logo{
+    width: 100%;
+  }
+  section{
+    width: 100%;
+    display: flex;
+  }
+  a {
+    display: inline-block;
+    position: center;
+    justify-content: center;
+  }
+  .navbar__menu-item {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 768px){
+  section{
+    width: 100%;
+    display: flex;
+  }
+  .navbar__menu-item {
+    font-size: 1.3em;
+  }
+}
+
+  
